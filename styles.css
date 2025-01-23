@@ -20,8 +20,8 @@ title {}
 
 :root {
     --slate-900: #1F314F; 
-    --Slate-500: #68778D;
-    --Slate-300: #D5E1EF;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF;
     --white: #ffffff;
     --blue: #2C7DFA;
 }
@@ -31,32 +31,39 @@ title {}
 html {}
 body {
     background-color: var(--Slate-300);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 div#name {}
 div.name {}
 div {}
 span {}
 main {
-    display: grid;
-    justify-content: center;
     padding: 16px;
     background-color: var(--white);
     width: 320px;
     height: 499px;
     margin-bottom: 24px;
     border-radius: 20px;
+    text-wrap: balanced;
 }
 
-.qr-code{
-    width: 288px;
-    height: 288px;
+.attribution { font-size: 11px; text-align: center; flex-;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.qr-code img{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    max-width: 100%;
     background-color: var(--blue);
     border-radius: 10px;
     overflow-wrap: normal;
 }
-.qr-code img{
-    border-radius: 20px;
-}
+
 
 /* -- TEXT -- */
 
