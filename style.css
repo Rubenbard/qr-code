@@ -1,3 +1,4 @@
+/*css reset */
 /* Box sizing rules */
 *,
 *::before,
@@ -12,10 +13,10 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  font-size: 62.5%;
+  font-size: 62.5%; /*1em is now 10px */
 }
 
-/* Remove default margin in favour of better control in authored CSS */
+/* Remove default margin */
 body,
 h1,
 h2,
@@ -96,14 +97,14 @@ textarea:not([rows]) {
   --slate-900: #1f314f;
   --slate-500: #68778d;
   --slate-300: #d5e1ef;
-  --white: #fff;
+  --white: #ffffff;
 
   /* Typography */
-  --fs-bold: 2.2rem;
+  --font-bold: 2.2rem;
   --lh-bold: 1.2;
   --ls-bold: 0;
 
-  --fs-regular: 1.5rem;
+  --font-regular: 1.5rem;
   --lh-regular: 1.4;
   --ls-regular: 0.02rem;
 }
@@ -113,7 +114,7 @@ body {
   background-color: var(--slate-300);
 }
 
-.main-box {
+main {
   background-color: var(--slate-300);
   display: flex;
   align-items: center;
@@ -130,7 +131,7 @@ body {
   box-shadow: 0 2.5rem 2.5rem 0 rgba(0, 0, 0, 0.0477);
 }
 
-.outer-box-img {
+.outer-box img {
   padding: 1.6rem;
   padding-bottom: 0;
 }
@@ -141,7 +142,7 @@ img {
   border-radius: 1rem;
 }
 
-.text-box {
+.text {
   padding: 2.4rem 1.6rem 0 1.6rem;
   text-align: center;
 }
@@ -149,7 +150,7 @@ img {
 h1 {
   color: var(--slate-900);
   font-weight: 700;
-  font-size: var(--fs-bold);
+  font-size: var(--font-bold);
   line-height: var(--lh-bold);
   padding: 0 1.6rem 0 1.6rem;
   padding-bottom: 1.6rem;
@@ -157,7 +158,7 @@ h1 {
 
 p {
   color: var(--slate-500);
-  font-size: var(--fs-regular);
+  font-size: var(--font-regular);
   line-height: var(--lh-regular);
   letter-spacing: var(--ls-regular);
   font-weight: 400;
